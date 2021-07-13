@@ -15,16 +15,17 @@ import { vendingService } from "../Services/VendingService.js";
 //   `
 // }
 
+
 //Public
-export default class VendingService {
+export default class VendingController {
   constructor() {
     console.log('vending from contr working')
-    // ProxyState.on("values", _draw);
-    // _draw()
+    
   }
-
-  // addValue() {
-  //   vendingService.addValue()
-  // }
+  add() {
+    console.log('vending from ADDcontr working')
+  vendingService.add()
+}
+  
 
 }

@@ -3,13 +3,4 @@ export default class Value {
         this.name = data.name
         this.price = data.price
     }
-
-    get Template() {
-
-        return /*html*/`
-        <div class="card p-2 value">
-            ${this.title}
-        </div>
-        `
-    }
 }
