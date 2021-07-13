@@ -10,7 +10,12 @@ class VendingService {
   }
   
   add() {
-    
+    // let money = 0
+    // let quarter = .25
+    ProxyState.money += .25
+  
+    console.log(ProxyState.money)
+
   }
 }
 
