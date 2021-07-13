@@ -15,7 +15,13 @@ class VendingService {
     ProxyState.money += .25
   
     console.log(ProxyState.money)
+  }
 
+  buy() {
+    if (ProxyState.money >= ProxyState.snack.price) {
+      ProxyState.money -= ProxyState.snack.price
+      console.log('bought chips')
+    }
   }
 }
 

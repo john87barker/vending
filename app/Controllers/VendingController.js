@@ -4,13 +4,16 @@ import { vendingService } from "../Services/VendingService.js";
 
 export default class VendingController {
   constructor() {
-    console.log('vending from contr working')
+    // console.log('vending from contr working')
     
   }
   add() {
-    console.log('vending from ADDcontr working')
+    // console.log('vending from ADDcontr working')
   vendingService.add()
 }
-  
+  buy() {
+    // console.log('buy function at controller')
+    vendingService.buy()
+  }
 
 }
