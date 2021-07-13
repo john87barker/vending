@@ -8,7 +8,8 @@ class AppState extends EventEmitter {
   snack = [
     new Snack('Doritos', 1, 10),
     new Snack('Dr. Pepper', 1.25, 10) ,
-    new Snack('Twizzler', .75, 10)
+    new Snack('Twizzler', .75, 10),
+    new Snack('Oreo', .75, 10)
   ]
 }
 

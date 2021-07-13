@@ -21,7 +21,7 @@ class VendingService {
     const find = ProxyState.snack.find(s => s.name == snack)
     if (ProxyState.money >= find.price) {
       ProxyState.money -= find.price
-      window.alert(`your ${find.name} is on it's way!`)
+      window.alert(`Your ${find.name} is on it's way! Enjoy your treat and feel free to share!`)
     }
 
   }

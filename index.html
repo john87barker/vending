@@ -9,7 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title>vending</title>
+    <title>Vending Fabulous Variety of Fun</title>
 </head>
 
 <body>
@@ -17,29 +17,40 @@
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">vending</span>
+                <span class="ml-2">Vending Fabulous Variety of Fun</span>
             </a>
         </nav>
     </header>
-    <main class="container">
+    <main class="container-fluid">
         <div id="app"></div>
 
-
-<button type="button" class="btn btn-primary" onclick="app.vendingController.add()">Add a Quarter</button>
-<div>Total Inserted $ <span id="total"></span></div>
+<div class="row m-4 justify-content-around">
+<button type="button" class="btn btn-primary p-4" onclick="app.vendingController.add()">Add a Quarter</button>
+<button type="button" class="btn btn-warning p-4" onclick="app.vendingController.clear()">Return Money</button>
+</div>
+<div class="text-center">Total Inserted $ <span id="total"></span></div>
 <hr>
-<button type="button" class="btn btn-primary" onclick="app.vendingController.buy('Doritos')">Buy Doritos</button>
 
-<button type="button" class="btn btn-primary" onclick="app.vendingController.buy('Dr. Pepper')">Buy Dr. Pepper</button>
 
-<button type="button" class="btn btn-primary" onclick="app.vendingController.buy('Twizzler')">Buy Twizzler</button>
 
+<div class="row d-flex justify-content-around">
+<button type="button" class="btn btn-primary" onclick="app.vendingController.buy('Doritos')" class= "col-md-3">Buy Doritos</button>
+
+<button type="button" class="btn btn-primary" onclick="app.vendingController.buy('Dr. Pepper')"class= "col-md-3">Buy Dr. Pepper</button>
+
+<button type="button" class="btn btn-primary" onclick="app.vendingController.buy('Twizzler')" class= "col-md-3">Buy Twizzler</button>
+
+<button type="button" class="btn btn-primary" onclick="app.vendingController.buy('Oreo')" class="col-md-3">Buy
+    Oreos</button>
+</div>
 <hr>
-<button type="button" class="btn btn-primary" onclick="app.vendingController.clear()">Return Money</button>
+
+
+
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
-            <p><small>Made with love by Codeworks</small></p>
+            <p><small>Made with 🧡 by Codeworks</small></p>
         </div>
     </footer>
 

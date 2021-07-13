@@ -5,6 +5,8 @@ function _draw() {
   document.getElementById('total').innerText = ProxyState.money.toString()
 
 }
+
+
 export default class VendingController {
   constructor() {
     // console.log('vending from contr working')
