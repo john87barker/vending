@@ -16,9 +16,9 @@ export default class VendingController {
     _draw()
   }
   
-  buy() {
+  buy(snack) {
     // console.log('buy function at controller')
-    vendingService.buy()
+    vendingService.buy(snack)
     _draw()
   }
   clear() {

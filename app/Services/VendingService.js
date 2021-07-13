@@ -17,15 +17,16 @@ class VendingService {
     console.log(ProxyState.money)
   }
 
-  buy() {
-    if (ProxyState.money >= ProxyState.snack.price) {
-      ProxyState.money -= ProxyState.snack.price
-      console.log('bought chips')
+  buy(snack) {
+    const find = ProxyState.snack.find(s => s.name == snack)
+    if (ProxyState.money >= find.price) {
+      ProxyState.money -= find.price
+      console.log('bought chips, do you want ', find)
     }
   }
   clear() {
     ProxyState.money = 0
-    console.log('money gone')
+    // console.log('money gone')
   }
 }
 
