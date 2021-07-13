@@ -23,6 +23,10 @@ class VendingService {
       console.log('bought chips')
     }
   }
+  clear() {
+    ProxyState.money = 0
+    console.log('money gone')
+  }
 }
 
 export const vendingService = new VendingService();
