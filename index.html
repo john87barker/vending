@@ -24,18 +24,21 @@
     <main class="container-fluid">
         <div id="app"></div>
 
-<div class="row m-4 justify-content-around">
-<button type="button" class="btn btn-primary p-4" onclick="app.vendingController.add()">Add a Quarter</button>
-<button type="button" class="btn btn-warning p-4" onclick="app.vendingController.clear()">Return Money</button>
-</div>
-<div class="text-center">Total Inserted $ <span id="total"></span></div>
-<hr>
+        <div class="row m-2 justify-content-around">
+            <button type="button" class="btn btn-primary p-2 mt-2" onclick="app.vendingController.add()">Add a
+                Quarter</button>
+            <div class="text-center mt-2 p-2">Total Inserted $ <span id="total"></span></div>
+            <button type="button" class="btn btn-warning p-2 mt-2" onclick="app.vendingController.clear()">Return
+                Money</button>
+        </div>
+
+        <hr>
 
 
 
-<div class="row d-flex justify-content-around" id="snack">
-</div>
-<hr>
+        <div class="row d-flex justify-content-around" id="snack">
+        </div>
+        <hr>
 
 
 

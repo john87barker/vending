@@ -4,14 +4,17 @@ import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   money = 0
-  
+
   snack = [
     new Snack('Doritos', 1, 10),
-    new Snack('Dr. Pepper', 1.25, 10) ,
+    new Snack('Dr. Pepper', 1.25, 10),
     new Snack('Twizzler', .75, 10),
     new Snack('Oreo', .75, 10),
     new Snack('Gum', .5, 10),
-    new Snack('Cheetos', 1, 10)
+    new Snack('Cheetos', 1, 10),
+    new Snack('Gaterade', 1.5, 10),
+    new Snack('Twix', 1.25, 10),
+    new Snack('Jerky', 1.75, 10)
   ]
 }
 
