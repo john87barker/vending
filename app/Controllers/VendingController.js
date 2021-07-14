@@ -3,7 +3,13 @@ import { vendingService } from "../Services/VendingService.js";
 
 function _draw() {
   document.getElementById('total').innerText = ProxyState.money.toString()
+let template = ''
 
+  ProxyState.snack.forEach(s => {
+    template += /*html*/ `
+    <button type="button" class="btn btn-secondary" onclick="app.vendingController.buy('${s.name}')" class="col-md-3">Buy ${s.name}</button>`
+  })
+  document.getElementById('snack').innerHTML = template
 }
 
 
